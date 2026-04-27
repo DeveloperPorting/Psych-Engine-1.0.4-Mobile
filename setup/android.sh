@@ -14,7 +14,7 @@ haxelib install hscript-iris 1.1.3
 haxelib install tjson 1.4.0
 haxelib install hxdiscord_rpc 1.2.4
 haxelib install hxvlc 2.0.1 --skip-dependencies
-haxelib git lime https://github.com/DeveloperPorting-Stuff/LimeFunkinCrew main
+haxelib git lime https://github.com/DeveloperPorting-Stuff/lime main
 haxelib install openfl 9.3.3
 haxelib git flxanimate https://github.com/Dot-Stuff/flxanimate 768740a56b26aa0c072720e0d1236b94afe68e3e
 haxelib git linc_luajit https://github.com/DeveloperPorting-Stuff/linc_luajit main
