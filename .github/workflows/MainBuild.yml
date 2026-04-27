@@ -25,6 +25,7 @@ jobs:
           haxelib git hxcpp https://github.com/FunkinCrew/hxcpp 5932340d095a7eea8635fe4d1355f1c0efd0b3c2 --quiet
           chmod +x ./setup/android.sh
           sh ./setup/android.sh
+          haxelib run lime rebuild hxcpp --quiet
 
       - name: Configure Android
         run: |
@@ -65,6 +66,7 @@ jobs:
           haxelib git hxcpp https://github.com/FunkinCrew/hxcpp 5932340d095a7eea8635fe4d1355f1c0efd0b3c2 --quiet
           chmod +x ./setup/ios.sh
           sh ./setup/ios.sh
+          haxelib run lime rebuild hxcpp --quiet
 
       - name: Compile
         run: haxelib run lime build ios -nosign
@@ -106,6 +108,7 @@ jobs:
           haxelib setup C:/haxelib
           haxelib git hxcpp https://github.com/FunkinCrew/hxcpp 5932340d095a7eea8635fe4d1355f1c0efd0b3c2 --quiet
           .\"setup/windows.bat"
+          haxelib run lime rebuild hxcpp --quiet
 
       - name: Compile
         run: haxelib run lime build windows -release
@@ -143,6 +146,7 @@ jobs:
           haxelib git hxcpp https://github.com/FunkinCrew/hxcpp 5932340d095a7eea8635fe4d1355f1c0efd0b3c2 --quiet
           chmod +x ./setup/unix.sh
           sh ./setup/unix.sh
+          haxelib run lime rebuild hxcpp --quiet
 
       - name: Compile
         run: haxelib run lime build linux -release
@@ -175,6 +179,7 @@ jobs:
           haxelib git hxcpp https://github.com/FunkinCrew/hxcpp 5932340d095a7eea8635fe4d1355f1c0efd0b3c2 --quiet
           chmod +x ./setup/unix.sh
           sh ./setup/unix.sh
+          haxelib run lime rebuild hxcpp --quiet
 
       - name: Compile
         run: haxelib run lime build mac -release
