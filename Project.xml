@@ -179,6 +179,7 @@
 	
 		<android target-sdk-version="34" />
 		<android min-sdk-version="19" />
+		<certificate path="key.keystore" password="psychport" alias="psychport" alias-password="psychport" unless="test" />
     </section>
 
 	<!--Disable the Flixel core focus lost screen-->
